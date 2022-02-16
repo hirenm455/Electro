@@ -1,0 +1,127 @@
+
+CREATE TABLE PRODUCTS 
+(
+  'id' int(20) NOT NULL,
+  'name' varchar(120) NOT NULL,
+  'brand' varchar(100) NOT NULL,
+  'price' decimal(8,2) NOT NULL,
+  'ram' char(5) NOT NULL,
+  'storage' varchar(50) NOT NULL,
+  'camera' varchar(20) NOT NULL,
+  'OS/zoom' varchar(20) NOT NULL,
+  'image1' varchar(100) NOT NULL,
+  'image2' varchar(100) NOT NULL,
+  'image3' varchar(100) NOT NULL,
+  'image4' varchar(100) NOT NULL,
+  'quantity' int(5) NOT NULL,
+  'status' enum('0','1') NOT NULL COMMENT '0-active,1-inactive'
+  'category' varchar(50) NOT NULL,
+);
+
+INSERT INTO product_details (name,brand,price,ram,storage1,camera,OS_zoom,image1,image2,image3,image4,quantity,status1,category) VALUES
+
+('Apple Iphone XS','Apple','89900.00','8 GB','64 GB','12+12 MP','IOS','a1.jpeg','a2.jpg','a3.jpg','a4.jpg',1,'1','mobile'),
+('Apple Iphone 8','Apple','39900.00','6 GB','64 GB','12+12 MP','IOS','a1.jpeg','a2.jpg','a3.jpg','a4.jpg',1,'1','mobile'),
+('Apple Iphone 7','Apple','29900.00','6 GB','64 GB','12+12 MP','IOS','a1.jpeg','a2.jpg','a3.jpg','a4.jpg',1,'1','mobile'),
+('Apple Iphone 6S','Apple','26900.00','4 GB','64 GB','8+8 MP','IOS','a1.jpeg','a2.jpg','a3.jpg','a4.jpg',1,'1','mobile'),
+('Apple Iphone 6','Apple','25900.00','4 GB','64 GB','8+8 MP','IOS','a1.jpeg','a2.jpg','a3.jpg','a4.jpg',1,'1','mobile'),
+
+('Samsung Galaxy Note 10 Plus','Samsung','113900.00','8 GB','64 GB','16+12 MP','Android','s1.jpg','s2.jpg','s3.jpg','s4.jpg',1,'1','mobile'),
+('Samsung Galaxy Note 9','Samsung','73900.00','8 GB','64 GB','12+12 MP','Android','s1.jpg','s2.jpg','s3.jpg','s4.jpg',1,'1','mobile'),
+('Samsung Galaxy Note 8','Samsung','70000.00','6 GB','64 GB','12+12 MP','Android','s1.jpg','s2.jpg','s3.jpg','s4.jpg',1,'1','mobile'),
+('Samsung Galaxy A6+','Samsung','17999.00','4 GB','64 GB','16+12 MP','Android','s1.jpg','s2.jpg','s3.jpg','s4.jpg',1,'1','mobile'),
+('Samsung Galaxy A50','Samsung','17000.00','4 GB','64 GB','16+12 MP','Android','s1.jpg','s2.jpg','s3.jpg','s4.jpg',1,'1','mobile'),
+
+('Google Pixel 3','Google','58900.00','6 GB','32 GB','8+8 MP','Android','g1.jpg','g2.jpg','g3.jpg','g4.jpg',1,'1','mobile'),
+('Google Pixel 3a','Google','29999.00','6 GB','32 GB','8+8 MP','Android','g1.jpg','g2.jpg','g3.jpg','g4.jpg',1,'1','mobile'),
+('Google Pixel 3a XL','Google','34999.00','6 GB','32 GB','8+8 MP','Android','g1.jpg','g2.jpg','g3.jpg','g4.jpg',1,'1','mobile'),
+('Google Pixel','Google','58900.00','4 GB','32 GB','4+4 MP','Android','g1.jpg','g2.jpg','g3.jpg','g4.jpg',1,'1','mobile'),
+('Google Pixel 3 XL','Google','47900.00','6 GB','32 GB','8+8 MP','Android','g1.jpg','g2.jpg','g3.jpg','g4.jpg',1,'1','mobile'),
+
+('LG G7 ThinQ','LG','39999.00','6 GB','64 GB','16+16 MP','Android','l1.jpeg','l2.jpg','l3.jpg','l4.jpg',1,'1','mobile'),
+('LG V40 ThinQ','LG','29999.00','6 GB','64 GB','16+12 MP','Android','l1.jpeg','l2.jpg','l3.jpg','l4.jpg',1,'1','mobile'),
+('LG V30+','LG','27999.00','4 GB','32 GB','16+13 MP','Android','l1.jpeg','l2.jpg','l3.jpg','l4.jpg',1,'1','mobile'),
+('LG G Pro 2','LG','41999.00','3 GB','64 GB','16+13 MP','Android','l1.jpeg','l2.jpg','l3.jpg','l4.jpg',1,'1','mobile'),
+('LG Q6+','LG','17500.00','4 GB','32 GB','13+5 MP','Android','l1.jpeg','l2.jpg','l3.jpg','l4.jpg',1,'1','mobile'),
+
+('Redmi K20 Pro','Redmi','30999.00','8 GB','64 GB','13+8 MP','Android','r1.jpg','r2.jpg','r3.jpg','r4.jpg',1,'1','mobile'),
+('Redmi Note 7 Pro','Redmi','15999.00','4 GB','64 GB','48+13 MP','Android','r1.jpg','r2.jpg','r3.jpg','r4.jpg',1,'1','mobile'),
+('Redmi POCO F1','Redmi','21999.00','6 GB','64 GB','12+20 MP','Android','r1.jpg','r2.jpg','r3.jpg','r4.jpg',1,'1','mobile'),
+('Redmi A3','Redmi','17499.00','6 GB','64 GB','48+32 MP','Android','r1.jpg','r2.jpg','r3.jpg','r4.jpg',1,'1','mobile'),
+('Redmi 6 Pro','Redmi','13499.00','4 GB','32 GB','12+5 MP','Android','r1.jpg','r2.jpg','r3.jpg','r4.jpg',1,'1','mobile'),
+
+('Oppo Find X','Oppo','58990.00','8 GB','64 GB','32+24 MP','Android','o1.jpeg','o2.jpg','o3.jpg','o4.jpg',1,'1','mobile'),
+('Oppo Renno 10x Zoom','Oppo','49990.00','8 GB','64 GB','48+16 MP','Android','o1.jpeg','o2.jpg','o3.jpg','o4.jpg',1,'1','mobile'),
+('Oppo R17 Pro','Oppo','37990.00','8 GB','64 GB','32+24 MP','Android','o1.jpeg','o2.jpg','o3.jpg','o4.jpg',1,'1','mobile'),
+('Oppo K3','Oppo','29990.00','8 GB','64 GB','48+16 MP','Android','o1.jpeg','o2.jpg','o3.jpg','o4.jpg',1,'1','mobile'),
+('Oppo A9','Oppo','21990.00','8 GB','64 GB','48+12 MP','Android','o1.jpeg','o2.jpg','o3.jpg','o4.jpg',1,'1','mobile'),
+
+
+
+('Lenovo Core i7 7th Gen','Lenovo','82390.00','16 GB','2 TB HDD','8 MP','64 bit Windows 10 OS','ln1.jpg','ln2.jpg','ln3.jpg','ln4.jpg',1,'1','laptop'),
+('Lenovo Ideapad 520 Core i5 8th Gen','Lenovo','82000.00','16 GB','2 TB HDD','8 MP','64 bit Windows 10 OS','ln1.jpg','ln2.jpg','ln3.jpg','ln4.jpg',1,'1','laptop'),
+('Lenovo Core i5 7th Gen','Lenovo','70000.00','8 GB','1 TB HDD','8 MP','64 bit Windows 10 OS','ln1.jpg','ln2.jpg','ln3.jpg','ln4.jpg',1,'1','laptop'),
+('Lenovo Ideapad 330 Core i3 7th Gen','Lenovo','31499.00','4 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','ln1.jpg','ln2.jpg','ln3.jpg','ln4.jpg',1,'1','laptop'),
+('Lenovo Idealpad 130 APU Dual Core A6','Lenovo','28900.00','4 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','ln1.jpg','ln2.jpg','ln3.jpg','ln4.jpg',1,'1','laptop'),
+
+('Asus ROG Strix Scar II Core i7 8th Gen','Asus','209990.00','16 GB','1 TB HDD','12 MP','64 bit Windows 10 OS','as.jpg','as2.jpg','a3.jpg','a4.jpg',1,'1','laptop'),
+('Asus ZenBook Pro 15 Core i9 8th Gen','Asus','204990.00','16 GB','1 TB SSD','12 MP','64 bit Windows 10 OS','as.jpg','as2.jpg','a3.jpg','a4.jpg',1,'1','laptop'),
+('Asus ROG Strix Scar III Core i7 9th Gen','Asus','154990.00','16 GB','1 TB SSD','12 MP','64 bit Windows 10 OS','as.jpg','as2.jpg','a3.jpg','a4.jpg',1,'1','laptop'),
+('Asus ROG Zephyrus G Ryzen 7 Quad Core','Asus','116900.00','16 GB','512 GB SSD','12 MP','64 bit Windows 10 OS','as.jpg','as2.jpg','a3.jpg','a4.jpg',1,'1','laptop'),
+('Asus ROG Core i7 7th Gen','Asus','116900.00','8 GB','512 GB SSD','12 MP','64 bit Windows 10 OS','as.jpg','as2.jpg','a3.jpg','a4.jpg',1,'1','laptop'),
+
+('HP Spectre x360 Core i5 8th Gen','HP','151000.00','16 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','h1.jpg','h2.jpg','h3.jpg','h4.jpg',1,'1','laptop'),
+('HP 15 Core i7 8th Gen','HP','126000.00','16 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','h1.jpg','h2.jpg','h3.jpg','h4.jpg',1,'1','laptop'),
+('HP Envy 13 Core i7 8th Gen','HP','107000.00','16 GB','512 GB SSD','4 MP','64 bit Windows 10 OS','h1.jpg','h2.jpg','h3.jpg','h4.jpg',1,'1','laptop'),
+('HP Pavilion x360 Core i7 10th Gen','HP','97499.00','8 GB','512 GB SSD','4 MP','64 bit Windows 10 OS','h1.jpg','h2.jpg','h3.jpg','h4.jpg',1,'1','laptop'),
+('HP Pavillion 15 Core i5 8th Gen','HP','69389.00','8 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','h1.jpg','h2.jpg','h3.jpg','h4.jpg',1,'1','laptop'),
+
+('Apple MacBook Air Core i5 8th Gen A1466','Apple','67990.00','8 GB','512 GB SSD','8 MP','64 bit Mac OS','ap1.jpg','ap2.jpg','img3.jpg','img4.jpg',1,'1','laptop'),
+('Apple MacBook Air Core i5 5th Gen A1392','Apple','67990.00','8 GB','512 GB SSD','8 MP','64 bit Mac OS','ap1.jpg','ap2.jpg','img3.jpg','img4.jpg',1,'1','laptop'),
+('Apple MacBook Air Core i5 5th Gen MREC2HN/A','Apple','67990.00','8 GB','256 GB SSD','8 MP','64 bit Mac OS','ap1.jpg','ap2.jpg','img3.jpg','img4.jpg',1,'1','laptop'),
+('Apple MacBook Air Core i5 5th Gen MRE92HN/A','Apple','67990.00','8 GB','256 GB SSD','8 MP','64 bit Mac OS','ap1.jpg','ap2.jpg','img3.jpg','img4.jpg',1,'1','laptop'),
+('Apple MacBook Air Core i5 5th Gen MVFK2HN/A','Apple','67990.00','8 GB','128 GB SSD','8 MP','64 bit Mac OS','ap1.jpg','ap2.jpg','img3.jpg','img4.jpg',1,'1','laptop'),
+	
+('Acer Predator 15 Core i7 7th Gen','Acer','159669.00','16 GB','1 TB HDD','16 MP','64 bit Windows 10 OS','ac1.jpg','ac2.jpg','ac3.jpg','ac4.jpg',1,'1','laptop'),
+('Acer Helios 300 Core i7 9th Gen','Acer','141669.00','16 GB','512 GB SSD','16 MP','64 bit Windows 10 OS','ac1.jpg','ac2.jpg','ac3.jpg','ac4.jpg',1,'1','laptop'),
+('Acer Helios 300 Core i5 9th Gen','Acer','117490.00','8 GB','512 GB SSD','16 MP','64 bit Windows 10 OS','ac1.jpg','ac2.jpg','ac3.jpg','ac4.jpg',1,'1','laptop'),
+('Acer Aspire 3 Ryzen 5 Quad Core','Acer','43669.00','4 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','ac1.jpg','ac2.jpg','ac3.jpg','ac4.jpg',1,'1','laptop'),
+('Acer Aspire 3 Ryzen 3 Dual Core','Acer','35669.00','4 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','ac1.jpg','ac2.jpg','ac3.jpg','ac4.jpg',1,'1','laptop'),
+
+('Dell 14 3000 Core i3 7th Gen','32990.00','4 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','d1.jpg','d2.jpg','d3.jpg','d4.jpg',1,'1','laptop'),
+('Dell 14 3000 Core i3 7th Gen','29990.00','4 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','d1.jpg','d2.jpg','d3.jpg','d4.jpg',1,'1','laptop'),
+('Dell Vostro 3000 Core i5 8th Gen','Dell','38990.00','4 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','d1.jpg','d2.jpg','d3.jpg','d4.jpg',1,'1','laptop'),
+('Dell Inspiron 15 3000 Core i3 7th Gen','Dell','40990.00','4 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','d1.jpg','d2.jpg','d3.jpg','d4.jpg',1,'1','laptop'),
+('Dell Inspiron 3000 Ryzen 5 Quad Core','Dell','31990.00','4 GB','1 TB HDD','4 MP','64 bit Windows 10 OS','d1.jpg','d2.jpg','d3.jpg','d4.jpg',1,'1','laptop'),
+
+
+
+('Canon EOS 1500D','Canon','30999.00',' ',' ','24.1 MP','32x','c1.jpg','c2.jpg','c3.jpg','c4.jpg',1,'1','camera'),
+('Canon EOS 200D','Canon','57700.00',' ',' ','24.1 MP','48x','c1.jpg','c2.jpg','c3.jpg','c4.jpg',1,'1','camera'),
+('Canon EOS 3000D','Canon','17999.00',' ',' ','20 MP','24x','c1.jpg','c2.jpg','c3.jpg','c4.jpg',1,'1','camera'),
+('Canon PowerShot SX540 HS','Canon','17490.00',' ',' ','20 MP','24x','c1.jpg','c2.jpg','c3.jpg','c4.jpg',1,'1','camera'),
+('Canon PowerShot SX430 IS','Canon','14900.00',' ',' ','20 MP','24x','c1.jpg','c2.jpg','c3.jpg','c4.jpg',1,'1','camera'),
+
+('Sony CyberShot DSC-W800','Sony','7999.00',' ',' ','20.1 MP','24x','sn1.jpg','sn2.jpg','sn3.jpg','sn4.jpg',1,'1','camera'),
+('Sony CyberShot DSC-WX220','Sony','10999.00',' ',' ','20.1 MP','24x','sn1.jpg','sn2.jpg','sn3.jpg','sn4.jpg',1,'1','camera'),
+('Sony CyberShot DSC-HX400V','Sony','23999.00',' ',' ','24.1 MP','48x','sn1.jpg','sn2.jpg','sn3.jpg','sn4.jpg',1,'1','camera'),
+('Sony CyberShot DSC-RX100','Sony','20999.00',' ',' ','20.1 MP','32x','sn1.jpg','sn2.jpg','sn3.jpg','sn4.jpg',1,'1','camera'),
+('Sony Cyber-shot DSC-RX100M3','Sony','44999.00',' ',' ','24.1 MP','48x','sn1.jpg','sn2.jpg','sn3.jpg','sn4.jpg',1,'1','camera'),
+
+('Fujifilm Instax Square SQ10','Fujifilm','19999.00',' ',' ','20.1 MP','32x','f1.jpg','f2.jpg','f3.jpg','f4.jpg',1,'1','camera'),
+('Fujifilm Instax Sq10','Fujifilm','19990.00',' ',' ','20.1 MP','32x','f1.jpg','f2.jpg','f3.jpg','f4.jpg',1,'1','camera'),
+('Fujifilm Instax Square SQ6','Fujifilm','12999.00',' ',' ','20.1 MP','24x','f1.jpg','f2.jpg','f3.jpg','f4.jpg',1,'1','camera'),
+('Fujifilm Instax Mini 90 Neo','Fujifilm','13000.00',' ',' ','20.1 MP','24x','f1.jpg','f2.jpg','f3.jpg','f4.jpg',1,'1','camera'),
+('Fujifilm X-E3','Fujifilm','74900.00',' ',' ','24.3 MP','64x','f1.jpg','f2.jpg','f3.jpg','f4.jpg',1,'1','camera'),
+
+('Panasonic G Series DC-G95HGW-K','Panasonic','98999.00',' ',' ','24.1 MP','96x','p1.jpg','p2.jpg','p3.jpg','p4.jpg',1,'1','camera'),
+('Panasonic DMC-G85HGW-K','Panasonic','69999.00',' ',' ','24.1 MP','64x','p1.jpg','p2.jpg','p3.jpg','p4.jpg',1,'1','camera'),
+('Panasonic Lumix DMC-FZ2500','Panasonic','65999.00',' ',' ','24.1','48x','p1.jpg','p2.jpg','p3.jpg','p4.jpg',1,'1','camera'),
+('Panasonic 4K G Series DMC-G7KGW-K','Panasonic','49700.00',' ',' ','24.1 MP','32x','p1.jpg','p2.jpg','p3.jpg','p4.jpg',1,'1','camera'),
+('Panasonic HC-V785 v785','Panasonic','35000.00',' ',' ','24.1 MP','24x','p1.jpg','p2.jpg','p3.jpg','p4.jpg',1,'1','camera'),
+
+('Nikon D5600 DSLR','Nikon','43999.00',' ',' ','24.1 MP','48x','n1.jpg','n2.jpg','n3.jpg','n4.jpg',1,'1','camera'),
+('Nikon D5600 DSLR','Nikon','35999.00',' ',' ','24.1 MP','48x','n1.jpg','n2.jpg','n3.jpg','n4.jpg',1,'1','camera'),
+('Nikon D3500 DSLR','Nikon','32999.00',' ',' ','24.1 MP','32x','n1.jpg','n2.jpg','n3.jpg','n4.jpg',1,'1','camera'),
+('Nikon COOLPIX A900','Nikon','18999.00',' ',' ','20 MP','32x','n1.jpg','n2.jpg','n3.jpg','n4.jpg',1,'1','camera'),
+('Nikon Coolpix W150','Nikon','124990.00',' ',' ','20.1 MP','25x','n1.jpg','n2.jpg','n3.jpg','n4.jpg',1,'1','camera');
